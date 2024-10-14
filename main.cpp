@@ -2,18 +2,16 @@
 
 using namespace std;
 
-    // Метод для подсчета положительных элементов в интервале
-    int countPositiveInInterval(int arr[], int size, int a, int b) {
-    
-        int count = 0;
-    
-        for (int i = 0; i < size; ++i) {
-            if (arr[i] > 0 && arr[i] > a && arr[i] < b) {
-                ++count;
-            }
+// Метод для подсчета положительных элементов в интервале
+int countPositiveInInterval(int arr[], int size, int a, int b) {
+    int count = 0;
+    for (int i = 0; i < size; ++i) {
+        if (arr[i] > 0 && arr[i] > a && arr[i] < b) {
+            ++count;
         }
-        return count;
     }
+    return count;
+}
 
 int main() {
     
